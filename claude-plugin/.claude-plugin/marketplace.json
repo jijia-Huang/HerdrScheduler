@@ -1,0 +1,12 @@
+{
+  "name": "herdr-scheduler",
+  "owner": { "name": "jijiahuang" },
+  "metadata": { "description": "HerdrScheduler: scheduled work orders for Claude Code panes inside herdr" },
+  "plugins": [
+    {
+      "name": "herdr-scheduler",
+      "source": "./herdr-scheduler",
+      "description": "Report hook for scheduled herdr work panes, and MCP tools to add, change and inspect schedules"
+    }
+  ]
+}

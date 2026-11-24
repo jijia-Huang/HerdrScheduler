@@ -1,0 +1,37 @@
+id = "herdr-scheduler.p0"
+name = "HerdrScheduler P0"
+version = "0.0.1"
+min_herdr_version = "0.7.0"
+description = "P0 test plugin for HerdrScheduler; unlinked after the test."
+platforms = ["windows"]
+
+[[startup]]
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'startup']
+
+[[events]]
+on = "pane.closed"
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'event']
+
+[[events]]
+on = "pane.created"
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'event']
+
+[[events]]
+on = "tab.created"
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'event']
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'event']
+
+[[panes]]
+id = "scheduler"
+title = "P0 排程器"
+placement = "tab"
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\pane.mjs']
+
+[[actions]]
+id = "ping"
+title = "HerdrScheduler P0: ping"
+contexts = ["workspace"]
+command = ['C:\nvm4w\nodejs\node.exe', 'D:\Tool\HerdrScheduler\test\p0\herdr-plugin\log.mjs', 'action']

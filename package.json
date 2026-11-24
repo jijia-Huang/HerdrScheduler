@@ -1,0 +1,12 @@
+{
+  "name": "herdr-scheduler",
+  "version": "0.1.0",
+  "description": "Periodic work orders for Claude Code panes inside herdr",
+  "type": "module",
+  "private": true,
+  "bin": { "hsched": "bin/hsched.mjs" },
+  "scripts": {
+    "test": "node --test test/unit/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
